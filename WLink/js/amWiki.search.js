@@ -158,7 +158,7 @@
             }
             this.elm.$resultMsg.show().text('创建搜索中...');
             //创建子进程
-            this._worker = new win.Worker('Wlink/js/amWiki.search.worker.js');
+            this._worker = new win.Worker('WLink/js/amWiki.search.worker.js');
             //收到子进程搜素消息
             this._worker.onmessage = function (event) {
                 var data = event.data;
